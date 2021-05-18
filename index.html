@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Calculadora</title>
+</head>
+<body class="bg-secondary">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center fst-italic pt-5 pb-3 text-decoration-underline">Calculadora con JS</h1>
+			</div>
+			<div class="col-6">
+				<div>
+					<label for="calcInputA" class="badge rounded-pill bg-primary">Número A</label>
+					<input type="text" id="calcInputA" class="form-control">
+				</div>
+			</div>
+			<div class="col-6">
+				<div>
+					<label for="calcInputB" class="badge rounded-pill bg-primary">Número B</label>
+					<input type="text" id="calcInputB" class="form-control">
+				</div>
+			</div>
+			<div class="col-12">
+				<div>
+					<label for="calcInputR" class="badge rounded-pill bg-primary">Resultado</label>
+					<input type="text" id="calcInputR" readonly class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="row pt-2">
+			<div class="col-6 d-grid gap-2">
+				<button class="btn btn-primary" onclick="calculadora('sum')">Sumar</button>
+				<button class="btn btn-success" onclick="calculadora('sub')">Restar</button>
+			</div>
+			<div class="col-6 d-grid gap-2">
+				<button class="btn btn-warning" onclick="calculadora('mul')">Multiplicar</button>
+				<button class="btn btn-danger" onclick="calculadora('div')">Dividir</button>
+			</div>
+			<div class="col-12 d-grid pt-2">
+				<button class="btn btn-dark" onclick="calculadora('borrar')" id="btnClean">Borrar</button>
+			</div>
+		</div>
+	</div>
+<script src="js/app.js"></script>	
+</body>
+</html>
